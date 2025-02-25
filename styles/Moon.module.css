@@ -1,0 +1,43 @@
+.moon {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle at 30% 30%, #fff, #ccc);
+  border-radius: 50%;
+  box-shadow: 0 0 30px 10px rgba(255, 255, 255, 0.5);
+  animation: float 6s ease-in-out infinite;
+  z-index: 1;
+}
+
+.moon:hover {
+  transform: scale(1.1);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .moon {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .moon {
+    width: 80px;
+    height: 80px;
+    top: 3%;
+    right: 3%;
+  }
+}
+
