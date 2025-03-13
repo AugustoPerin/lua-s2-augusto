@@ -10,6 +10,14 @@
   color: white;
 }
 
+.stanza {
+  margin-bottom: 2rem; /* Espaço entre estrofes */
+}
+
+.stanza p {
+  margin-bottom: 0.5rem; /* Espaço entre linhas dentro de cada estrofe */
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
